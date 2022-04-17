@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Abroad Counselling for Indian Students| Apply For Abroad Education | LeapScholar</title>
+    <link rel="preload" as="style" data-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+    <!-- nav bar styling -->
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            margin: 0;
+            height: 1000px;
+        }
+        #navContainer {
+            box-shadow: 0px 3px 6px #00000014;
+            width: 100%;
+            background-color: white;
+            /* height: 75px; */
+            display: flex;
+            align-items: center;
+            margin: auto;
+            position: sticky;
+            top: 0;
+        }
+        #navBar {
+            width: 85%;
+            justify-content: space-between;
+            margin: auto;
+            display: flex;
+        }
+        #navBar > div,  #navBar > div:first-child > div {
+            display: flex;
+            /* padding: 2px; */
+        }
+        #navBar > div:first-child {
+            flex-grow: 1;
+        }
+        #navBar > div:last-child {
+            flex-grow: 2;
+            /* border: 1px solid red; */
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+        #navBar > div:first-child > * {
+            /* height: 100%; */
+            margin-right: 10px;
+        }
+        #navBar > div:first-child > div:last-child {
+            flex-grow: 2;
+        }
+        #navBar > div:first-child > div:first-child {
+            font-size: 24px;
+            color: #443eff;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            flex-grow: 1;
+            /* margin-right: 70px; */
+        }
+        #navBar > div:first-child > div:last-child> select {
+            border: 0;
+            text-transform: capitalize;
+            font-size: 18px;
+            color: #443eff;
+            font-weight: bold;
+        }
+        select > option {
+            background-color: white;
+            color: red;
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+        }
+        a {
+            text-decoration: none;
+        }
+        #navBar > div:last-child > p, #navBar > div:last-child > a {
+            color: black;
+        }
+        #navBar > div:last-child > p:hover, #navBar > div:last-child > a:hover {
+            color: #443eff;
+            cursor: pointer;
+        }
+        #navBar > div:last-child > button {
+            font-size: 14px;
+            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            border-radius: 0.25rem;
+            padding: 8px 12px;
+            border: 1px solid #443eff;
+            box-sizing: border-box;
+        }
+        #sign-in {
+            background-color: #443eff;
+            color: white;
+        }
+        #sign-up {
+            color: #443eff;
+            background-color: white;
+        }
+
+        @media all and (min-width:1px) and (max-width:1240px) {
+            #navBar > div:last-child{
+                /* visibility: collapse; */
+                display: none;
+                width: 0;
+            }
+            #navContainer {
+                width: 100%;
+                margin: auto;
+            }
+            #navBar {
+                width: 100%;
+            }
+        }
+    </style>
+    <!-- body content styling -->
+    <!-- hero1 styling here -->
+    <style>
+        #hero1 {
+            display: flex;
+        }
+        #hero1 > div {
+            width: 90%;
+            margin: auto;
+            /* height: 200px; */
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,500px);
+            gap: 20px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        
+        #hero1 > div > div {
+            /* border: 1px solid teal; */
+        }
+        #hero1 > div > div:last-child > img {
+                /* width: 80%; */
+                display: none;
+                margin: auto;
+            }
+        #hero1 > div > div:last-child {
+            background-image: url(https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2Flanding-page%2Fextra%2Fhero_image.png&w=1920&q=75);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #hero1 > div > div:first-child {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        #hero1 > div > div:first-child > h1 {
+            font-size: 45px;
+            margin: 10px auto;
+        }
+        #hero1 > div > div > div {
+            display: flex;
+            justify-content: start;
+            box-sizing: border-box;
+            width: 85%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        #hero1 > div > div >div > div {
+            display: flex;
+            /* border: 1px solid red; */
+            /* width: 30%; */
+            padding: 0 4rem 0 0;
+            align-items: center;
+
+        }
+
+        #hero1 > div > div > div > div > p {
+            padding-left: .5rem;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 14px;
+            /* border: 2px solid green; */
+        }
+        #hero1 div > button {
+            background-color: #443eff;
+            color: white;
+            text-transform: uppercase;
+            width: 85%;
+            padding: 12px 24px;
+            font-size: 16px;
+            box-shadow: 0 2px 6px #50505029;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 0.25rem;
+        }
+        @media all and (min-width:100px) and (max-width:760px) {
+            #hero1 > div {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(3,auto);
+                /* background-color: #443eff; */
+            }
+            #hero1 > div > div> div {
+                width: 100%;
+                justify-content: space-evenly;
+            }
+            #hero1 > div > div:first-child > h1 {
+                font-size: 28px;
+                margin: 10px auto;
+            }
+            #hero1 > div > div> div > div {
+                padding: 0;
+            }
+            #hero1 > div > div> div >button {
+                width: 100%;
+            }
+            #hero1 > div > div:last-child {
+                display: flex;
+                background-image: none;
+            }
+            #hero1 > div > div:last-child > img {
+                width: 100%;
+                margin: auto;
+                display: block;
+            }
+        }
+    </style>
+    <!-- usps below hero1 styling -->
+    <style>
+        #usps {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width: 90%;
+            margin: auto;
+            gap: 10px;
+            padding-bottom: 48px;
+        }
+        #usps > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #usps > div > div {
+            box-shadow: 0 -3px 20px #0000001a;
+            padding: 1.5rem;
+            border-radius: 9999px;
+            display: flex;
+            width: fit-content;
+            margin: auto;
+        }
+        #usps > div > h3 {
+            color: #3d495c;
+            font-size: 28px;
+            padding: 16px 16px 8px;
+            margin: 0 auto;
+        }
+        #usps > div > p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 18px;
+            color: #707179;
+        }
+        @media all and (min-width:100px) and (max-width:760px) {
+            #usps {
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+            }
+            #usps > div > h3 {
+                font-size: 20px;
+                padding: 16px 0px 4px;
+            }
+            #usps > div > p {
+                font-size: 14px;
+            }
+            #usps > div > div {
+                width: 20%;
+            }
+            #usps > div > div > img {
+                width: 100%;
+            }
+        }
+    </style>
+    <!-- everything you need for study abroad -->
+    <style>
+        .container-gray {
+            background: #f7f7f7;
+            width: 100%;
+            display: flex;
+            padding: 96px 16px;
+            box-sizing: border-box;
+        }
+        .container-gray > div {
+            box-shadow: 0 3px 20px #0000001a;
+            padding: 48px 0 0;
+        }
+        #ourServices {
+            margin: auto;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+        }
+        #ourServices > p {
+            font-size: 32px;
+            padding: 0 68px 48px;
+            text-align: center;
+            font-weight: 700;
+        }
+        #ourServices > p+div {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            /* width: 80%; */
+            margin: auto;
+            gap: 20px;
+        }
+        #ourServices > div > div {
+            /* border: 1px solid red; */
+            display: flex;;
+            align-items: center;
+            margin-bottom: 64px;
+        }
+        #ourServices > div > div > img {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        #ourServices > div > div > div {
+            padding-left: 12px;
+        }
+        #ourServices > div > div > h3 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        #ourServices > div > div > p {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        #ourServices > div:last-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            border: 0px;
+            border-style: solid;
+            border-top-width: 1px;
+            border-color: rgb(189, 189, 189);
+            padding: 24px 0 48px;
+            /* background-color: green; */
+        }
+
+        #ourServices > div:last-child > p {
+            font-size: 18px;
+            padding: 0 0 4px;
+            font-weight: 700;
+        }
+        #ourServices > div:last-child > button {
+            background-color: #443eff;
+            color: white;
+            font-size: 12px;
+            text-transform: capitalize;
+            padding: 12px 30px;
+            border-radius: 4px;
+            border: 0;
+        }
+        @media all and (min-width:100px) and (max-width:1055px) {
+            #ourServices > p {
+                font-size: 24px;
+            }
+            #ourServices > p+div {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                /* width: 80%; */
+                margin: auto;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navContainer">
+        <div id="navBar">
+            <div>
+                <div>
+                    <img src="https://leapscholar.com/assets/images/header/leap-logo.svg" alt="ls-logo">
+                    <p>LeapScholar</p>
+                </div>
+                <div>
+                    <select name="Choose Country" id="choose">
+                        <option value="choose country">choose country</option>
+                        <option value="ca">study in canada</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <a href="https://leapscholar.com/about-us">About</a>
+                <p>our experts</p>
+                <p>IELTS</p>
+                <a href="https://leapscholar.com/events">events</a>
+                <p>Scholarships</p>
+                <button id="sign-in">Sign in</button>
+                <button id="sign-up">sign up</button>
+            </div>
+        </div>
+    </div>
+    <!-- body starts -->
+    <div id="hero1">
+        <div>
+            <div>
+                <h1>Connect with India's best study abroad experts.</h1>
+                <div>
+                    <div>
+                        <img src="https://leapscholar.com/assets/images/landing-page/extra/awesome_check.svg" alt="check">
+                        <p>Live 1 Hour session</p>
+                    </div>
+                    <div>
+                        <img src="https://leapscholar.com/assets/images/landing-page/extra/awesome_check.svg" alt="check">
+                        <p>profile evaluation</p>
+                    </div>
+                    <div>
+                        <img src="https://leapscholar.com/assets/images/landing-page/extra/awesome_check.svg" alt="check">
+                        <p>university shortlist</p>
+                    </div>
+                </div>
+                <div>
+                    <button>book free counselling</button>
+                </div>
+            </div>
+            <div>
+                <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2Flanding-page%2Fextra%2Fhero_image.png&w=1920&q=75 alt="ls">
+            </div>
+        </div>
+    </div>
+    <div id="usps">
+        <div>
+            <div>
+                <img src="https://leapscholar.com/assets/images/landing-page/extra/show_case/family.svg" alt="community">
+            </div>
+            <h3>1,00,000+</h3>
+            <p>Student Community</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://leapscholar.com/assets/images/landing-page/extra/show_case/home.svg" alt="home">
+            </div>
+            <h3>1,000+</h3>
+            <p>Colleges & Universities</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://leapscholar.com/assets/images/landing-page/extra/show_case/book.svg" alt="book">
+            </div>
+            <h3>10,000+</h3>
+            <p>Courses and Programs</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://leapscholar.com/assets/images/landing-page/extra/show_case/price.svg" alt="price">
+            </div>
+            <h3>$250,000</h3>
+            <p>Worth Scholarships</p>
+        </div>
+    </div>
+    <!-- everything you need for study abroad -->
+    <div class="container-gray">
+        <div id="ourServices">
+            <p>Everything you need for your study abroad dream</p>
+            <div>
+                <div>
+                    <img src="https://leapscholar.com/assets/images/new-landing-page/university-icon.svg" alt="uni">
+                    <div>
+                        <h3>Personalised Guidance</h3>
+                        <p>India’s best counsellors with you, all the way.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://leapscholar.com/assets/images/new-landing-page/ielts-icon.svg" alt="ielts-icon">
+                    <div>
+                        <h3>IELTS Coaching</h3>
+                        <p>Learn from India’s best IELTS trainers.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://leapscholar.com/assets/images/new-landing-page/money-bag-icon.svg" alt="money-bag-icon">
+                    <div>
+                        <h3>Financing Help</h3>
+                        <p>Loans and scholarships assistance.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://leapscholar.com/assets/images/new-landing-page/visa.svg" alt="visa">
+                    <div>
+                        <h3>Visa Assurance</h3>
+                        <p>Our visa counsellors have a 98% success rate.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Speak to our counsellor</p>
+                <button>get expert counselling</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
